@@ -1,6 +1,8 @@
 # YoutTube_360_Processor
 Video Processor for 360 videos.
 
+This uses FFMpeg and SpatialMedia. Settings are hard-coded Top_Bottom Stereoscopic Videos.
+
 1. Download YouTube_360_Processor.zip file.
 2. Extract the YouTube_360_Processor.zip file.
 3. Open the folder where you extracted YouTube_360_Processor.zip.
