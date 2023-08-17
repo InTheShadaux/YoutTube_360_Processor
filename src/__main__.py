@@ -85,31 +85,9 @@ class YouTubeVRApp(QMainWindow):
 
         #Print that the file has been deleted
         print("Original FFmpeg output has been deleted...")
-        
-# Check if FFmpeg is installed
-def check_ffmpeg():
-    try:
-        subprocess.check_call(["ffmpeg", "-version"])
-    except:
-        #Install FFmpeg if its not installed
-        print("FFmpeg is not installed. Installing FFmpeg...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "ffmpeg-python"])
-        sys.exit()
-
-# Cheeck if PyQT5 is installed
-def check_pyqt5():
-    try:
-        import PyQt5
-    except:
-        #Install PyQT5 if its not installed
-        print("PyQT5 is not installed. Installing PyQT5...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "PyQt5"])
-        sys.exit()
 
 # Run the application
 def main():
-    check_ffmpeg()
-    check_pyqt5()
     app = QApplication(sys.argv)
     window = YouTubeVRApp()
     window.show()
