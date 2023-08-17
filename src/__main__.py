@@ -75,7 +75,7 @@ class YouTubeVRApp(QMainWindow):
         spatialmedia = os.path.join(cwd, "spatialmedia")
 
         # Inject 3D metadata using SpatialMedia and rename file
-        subprocess.check_call([sys.executable, spatialmedia, "-i", "--stereo=top-bottom", ffmpeg_output,  ffmpeg_output.replace("ffmpeg_", "processed_")])
+        subprocess.check_call(["python", spatialmedia, "-i", "--stereo=top-bottom", ffmpeg_output,  ffmpeg_output.replace("ffmpeg_", "processed_")])
 
         #Print that the file has finished processing in SpatialMedia
         print("File has finished processing in SpatialMedia...")
